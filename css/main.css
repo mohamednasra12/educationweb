@@ -1,0 +1,672 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff;
+  --color-primary: #051b67;
+  --color-secound: #4a93c4;
+  --color-text: #2e2c34;
+  --color-pargraph: #707070;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+  direction: rtl;
+  height: 100vh;
+  scroll-behavior: smooth;
+  position: relative;
+  background-color: var(--body-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+@font-face {
+  font-family: "semibold";
+  src: url("../fonts/alfont_com_Somar-semiBold.otf");
+}
+
+/* header */
+header .back {
+  background-color: rgb(83 146 251 / 10%);
+  background-image: url(../img/head.png);
+}
+header .parent-logo {
+  display: flex;
+  align-items: end;
+  width: 75%;
+}
+header .parent-logo .word-logo h4 {
+  text-align: center;
+  font-family: "bold";
+  font-size: 15px;
+  color: rgba(237, 184, 62, 1);
+}
+header .parent-logo .word-logo span {
+  font-family: "bold";
+  font-size: 15px;
+  color: rgba(44, 55, 97, 1);
+}
+
+header .parent-logo .word-logo p {
+  font-family: "regular";
+  font-size: 7px;
+  color: rgba(111, 111, 111, 1);
+}
+header .parent-logo .img-log img {
+  width: 75px;
+  height: 60px;
+}
+header .head-page {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0 4rem;
+}
+header .join-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+}
+header .join-account .btn-link {
+  font-family: "regular";
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+header .join-account a {
+  color: black;
+  text-decoration: none;
+}
+header .join-account .btn-warning {
+  font-family: "bold";
+  font-size: 18px;
+  color: white;
+  background-color: rgba(237, 184, 62, 1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+}
+
+header .join h4 {
+  font-family: "bold";
+  font-size: 56px;
+}
+header .join p {
+  font-family: "regular";
+  font-size: 16px;
+  color: rgba(89, 93, 100, 1);
+  margin-bottom: 2rem;
+}
+header .join .btn-primary {
+  font-family: "bold";
+  font-size: 16px;
+  color: white;
+  background-color: rgba(83, 146, 251, 1);
+  padding: 0.8rem 4rem;
+  border-radius: 10px;
+}
+header .img-join img {
+  width: 80%;
+  margin-bottom: -70px;
+  margin-top: -60px;
+}
+/* header */
+
+/* courses */
+.courses {
+  background-color: rgba(255, 255, 255, 1);
+}
+.courses .card {
+  background-color: white;
+}
+.courses .head-cours {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 3rem 0;
+}
+.courses .head-cours h4 {
+  margin-bottom: 2rem;
+  font-family: "bold";
+  font-size: 48px;
+}
+.courses .head-cours p {
+  color: rgba(89, 93, 100, 1);
+  font-family: "regular";
+  font-size: 18px;
+  text-align: center;
+}
+.courses .head-cours img {
+  position: absolute;
+  top: 55px;
+  translate: -70px;
+}
+.courses .card .calender {
+  display: flex;
+  align-items: flex-start;
+}
+.courses .card-body-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 2px solid rgba(218, 218, 247, 1);
+}
+.courses .card {
+  border: none !important;
+  background-color: unset !important;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+.courses .card-body-btn .btn-primary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-family: "bold";
+  font-size: 16px;
+}
+.courses .calender .back {
+  background-color: rgba(36, 209, 152, 1);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+.courses .calender p {
+  font-family: "regular";
+  font-size: 15px;
+  color: rgba(119, 119, 149, 1);
+}
+.card-body .card-title {
+  font-family: "bold";
+  font-size: 20px;
+}
+.card-body .card-text {
+  font-family: "regular";
+  font-size: 14px;
+  color: rgba(129, 131, 135, 1);
+}
+.card-body-btn h6 {
+  color: rgba(83, 146, 251, 1);
+  font-family: "bold";
+  font-size: 24px;
+}
+
+/* courses */
+
+/* chose-teacher */
+.chose-teacher {
+  background-image: url(../img/lol.png);
+  /* background-position: center; */
+  background-size: cover;
+  background-color: rgba(44, 55, 97, 1);
+}
+.join-teach {
+  margin-top: 4rem;
+}
+.chose-teacher .join-teach h4 {
+  color: white;
+  font-family: "bold";
+  font-size: 40px;
+}
+.chose-teacher .join-teach p {
+  color: white;
+  font-family: "regular";
+  font-size: 16px;
+}
+.chose-teacher .join-teach h6 {
+  color: rgba(234, 238, 246, 1);
+  font-family: "regular";
+  font-size: 18px;
+  margin: 1.5rem 0 2rem;
+}
+.chose-teacher .join-teach .btn-warning {
+  color: white;
+  background-color: rgba(237, 184, 62, 1);
+  padding: 0.8rem 4rem;
+  border-radius: 10px;
+  font-family: "bold";
+  font-size: 16px;
+  margin: 1.5rem 0 2rem;
+}
+.chose-teacher .img-join img {
+  width: 65%;
+}
+.chose-teacher .img-join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* chose-teacher */
+
+/* summary supject */
+.summary {
+  margin-top: 3rem;
+}
+.summary .group {
+  display: flex;
+}
+.summary .group .yellow {
+  background-color: rgba(237, 184, 62, 1);
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.summary .group .blue {
+  background-color: rgba(83, 146, 251, 1);
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.summary .group .red {
+  background-color: rgba(255, 59, 83, 1);
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.text {
+  width: 80%;
+}
+.text h6 {
+  font-family: "bold";
+  font-size: 18px;
+  color: black;
+}
+.text p {
+  color: rgba(129, 131, 135, 1);
+  font-family: "regular";
+  font-size: 13px;
+}
+/* summary supject */
+
+/* couot */
+.couot {
+  background-image: url(../img/Rectangle\ 6.png);
+  background-size: cover;
+  background-position: center;
+  height: 70%;
+}
+.couot h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+/* couot */
+
+/* footer */
+footer {
+  background-image: url(../img/foot.png);
+  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+  color: white;
+}
+/* footer .back {
+  background-color: rgb(83 146 251 / 10%);
+  background-image: url(../img/head.png);
+} */
+footer .title {
+  display: flex;
+  align-items: end;
+  margin: 1.5rem;
+}
+footer .title .word h4 {
+  text-align: center;
+  font-family: "bold";
+  font-size: 15px;
+  color: rgba(237, 184, 62, 1);
+}
+footer .title .word span {
+  font-family: "bold";
+  font-size: 15px;
+  color: white;
+}
+
+footer .title .word p {
+  font-family: "regular";
+  font-size: 7px;
+}
+footer .title .img-title img {
+  width: 75px;
+  height: 60px;
+}
+.phone {
+  display: flex;
+}
+.phone svg {
+  margin-left: 0.5rem;
+  color: white;
+}
+.phone h6 {
+  margin: 0 1rem 2rem;
+}
+.social .wats {
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.social {
+  display: flex;
+  margin: 1rem 0 2rem;
+}
+.social .wats {
+  margin-left: 1.5rem;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.end {
+  margin-bottom: 1rem;
+}
+/* footer */
+
+/* sign-in */
+.sign-in .data h4 {
+  font-size: 24px;
+  font-family: "bold";
+}
+.sign-in .data h6 {
+  font-size: 16px;
+  font-family: "regular";
+  margin: 1rem 0 2rem;
+}
+.sign-in form .form-control {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 2rem 0.4rem 0.75rem;
+}
+.sign-in form ::placeholder {
+  color: rgba(129, 131, 135, 1);
+  font-size: 15px;
+  font-family: "regular";
+}
+.control-icon {
+  position: relative;
+}
+.control-icon .right {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  color: rgba(83, 146, 251, 1);
+}
+.control-icon-pass {
+  position: relative;
+}
+.control-icon-pass .lock {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  color: rgba(83, 146, 251, 1);
+}
+.control-icon-pass .lock-icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.sign-in .forget {
+  display: flex;
+  justify-content: end;
+}
+.sign-in .forget a {
+  color: black;
+  text-decoration: none;
+}
+.sign-in .forget h6 {
+  font-size: 17px;
+  font-family: "regular";
+}
+.sign-in .btn-primary {
+  font-size: 17px;
+  font-family: "bold";
+  padding: 0.5rem 4.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.new a {
+  text-decoration: none;
+}
+.new p {
+  font-size: 17px;
+  font-family: "bold";
+  color: black;
+}
+.new span {
+  font-size: 17px;
+  font-family: "bold";
+  color: rgba(83, 146, 251, 1);
+}
+
+.new p {
+  color: black;
+}
+
+.sign-in .img-sign {
+  margin: 0 auto;
+  text-align: center;
+}
+.sign-in .img-sign img {
+  width: 85%;
+}
+/* sign-in */
+
+/* start forgetpass */
+.forgetpass {
+  display: flex;
+  width: 100%;
+}
+.style-bord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.forgetpass .head-forget {
+  width: 55%;
+  border: 0.5px solid rgba(154, 158, 164, 1);
+  border-radius: 19px;
+  padding: 2rem 1.5rem 0;
+}
+.forgetpass .head-forget h4 {
+  font-size: 24px;
+  font-family: "bold";
+  margin-top: 2rem;
+}
+.forgetpass .head-forget p {
+  font-size: 16px;
+  font-family: "regular";
+  color: rgba(89, 93, 100, 1);
+  margin-bottom: 2rem;
+}
+.forgetpass .style-bord form ::placeholder {
+  color: rgba(129, 131, 135, 1);
+  font-size: 15px;
+  font-family: "regular";
+}
+.forgetpass .style-bord form .form-control {
+  padding-right: 2rem;
+  border-color: rgba(154, 158, 164, 1);
+}
+.forgetpass .style-bord form .btn-primary {
+  width: 100%;
+  color: white;
+  background-color: rgba(83, 146, 251, 1);
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.forgetpass .style-bord form a {
+  text-decoration: none;
+}
+.forgetpass .style-bord form p {
+  color: black;
+  font-size: 16px;
+  font-family: "regular";
+}
+.forgetpass .style-bord form span {
+  color: rgba(83, 146, 251, 1);
+}
+/* end forgetpass */
+/* Work-container-recode */
+.resend {
+  margin-top: 1rem;
+}
+.resend a {
+  color: #06797e;
+  font-family: "regular";
+}
+fieldset.number-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+}
+input.code-input {
+  padding: 2rem 0;
+  border: unset;
+  background-color: #f7f7f7;
+  border-radius: 13px;
+  text-align: center;
+  font-size: 1.5em;
+  width: 8em;
+  margin-left: 0.3rem;
+}
+.code-input:focus {
+  outline: none;
+  border: 2px solid rgba(10, 18, 31, 1);
+}
+/* Work-container-recode */
+
+/* new-account */
+.form-check-radio {
+  display: flex;
+  justify-content: space-evenly;
+}
+form .radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+/* new-account */
+@media (max-width: 1000px) {
+  header .join-account {
+    width: 51%;
+  }
+  .chose-teacher .img-join img {
+    width: 100%;
+  }
+  .summary .group {
+    margin-bottom: 0.5rem;
+  }
+  header .img-join img {
+    margin-bottom: 130px;
+  }
+  .forgetpass .head-forget {
+    width: 80%;
+  }
+  input.code-input {
+    margin: 0.2rem;
+  }
+  .sign-in .img-sign img {
+    width: 90%;
+}
+header .parent-logo {
+  width: 60%;
+
+}
+}
+@media (max-width: 600px) {
+  header .join-account {
+    width: 100%;
+  }
+  header .img-join img {
+    margin: 0;
+    width: 70%;
+  }
+  .courses .card {
+    margin: 1rem auto;
+  }
+  .chose-teacher .join-teach h4 {
+    font-size: 35px;
+  }
+  .chose-teacher .img-join img {
+    width: 65%;
+  }
+  .sign-in .img-sign img {
+    width: 70%;
+}
+.forgetpass .head-forget {
+  width: 95%;
+}
+}
+@media (max-width: 400px) {
+  header .join-account {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 600px) {
+}

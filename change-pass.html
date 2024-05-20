@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edulearn-change-pass</title>
+
+    <!-- ? Favicon img -->
+    <link rel="icon" href="img/nav.png" type="image" />
+    <!-- ? Favicon img-->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/swiper-demos.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- main css -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@300;500;900&family=Roboto:ital,wght@1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="head-page">
+            <div class="parent-logo">
+              <div class="word-logo">
+                <h4>Edu<span>Learn</span></h4>
+                <p>KNOWLEDGE INSIDE</p>
+              </div>
+              <div class="img-log">
+                <img src="img/nav.png" alt="" />
+              </div>
+            </div>
+            <div class="join-account">
+              <a href="sign-in.html">
+                <button type="button" class="btn btn-link">تسجيل الدخول</button>
+              </a>
+              <a href="new-account.html">
+                <button type="button" class="btn btn-warning">حساب جديد</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start forgetpass-->
+
+    <div class="forgetpass">
+      <div class="container">
+        <div class="row">
+          <div class="style-bord">
+            <div class="head-forget">
+              <img src="img/lock.png" alt="" />
+              <h4>تغيير كلمة السر</h4>
+              <p>
+                دخل كلمة سر قوية تحتوي على الاقل 8 رموز مكونة من حروف وارقام
+              </p>
+
+              <form>
+                <div class="control-icon-pass mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password-now"
+                    placeholder="كلمة السر الجديدة"
+                  />
+                  <i class="fa-solid fa-unlock lock"></i>
+                  <span
+                    class="lock-icon"
+                    onclick="togglePasswordVisibilitynow()"
+                  >
+                    <i id="lockIcon-now" class="fa-solid fa-eye"></i>
+                  </span>
+                </div>
+                <div class="control-icon-pass">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password-new"
+                    placeholder="تأكيد كلمة السر "
+                  />
+                  <i class="fa-solid fa-unlock lock"></i>
+                  <span
+                    class="lock-icon"
+                    onclick="togglePasswordVisibilitynew()"
+                  >
+                    <i id="lockIcon-new" class="fa-solid fa-eye"></i>
+                  </span>
+                </div>
+                <button type="button" class="btn btn-primary">
+                  ارسال الكود
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end forgetpass -->
+
+    <!-- js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-demos.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- js -->
+    <!-- eye -->
+    <script>
+      function togglePasswordVisibilitynow() {
+        var passwordInput = document.getElementById("password-now");
+        var lockIcon = document.getElementById("lockIcon-now");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          lockIcon.classList.remove("fa-eye");
+          lockIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordInput.type = "password";
+          lockIcon.classList.remove("fa-eye-slash");
+          lockIcon.classList.add("fa-eye");
+        }
+      }
+      function togglePasswordVisibilitynew() {
+        var passwordInput = document.getElementById("password-new");
+        var lockIcon = document.getElementById("lockIcon-new");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          lockIcon.classList.remove("fa-eye");
+          lockIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordInput.type = "password";
+          lockIcon.classList.remove("fa-eye-slash");
+          lockIcon.classList.add("fa-eye");
+        }
+      }
+    </script>
+    <!-- eye -->
+  </body>
+</html>

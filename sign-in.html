@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edulearn-sign-in</title>
+
+    <!-- ? Favicon img -->
+    <link rel="icon" href="img/nav.png" type="image" />
+    <!-- ? Favicon img-->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/swiper-demos.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- main css -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cairo:wght@300;500;900&family=Roboto:ital,wght@1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="head-page">
+            <div class="parent-logo">
+              <div class="word-logo">
+                <h4>Edu<span>Learn</span></h4>
+                <p>KNOWLEDGE INSIDE</p>
+              </div>
+              <div class="img-log">
+                <img src="img/nav.png" alt="" />
+              </div>
+            </div>
+            <div class="join-account">
+              <a href="sign-in.html">
+                <button type="button" class="btn btn-link">تسجيل الدخول</button>
+              </a>
+              <a href="new-account.html">
+                <button type="button" class="btn btn-warning">حساب جديد</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start sign-in -->
+    <div class="sign-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-11">
+            <div class="data">
+              <h4>تسجيل الدخول</h4>
+              <h6>ادخل بياناتك بشكل صحيح لتسجيل الدخول الى الموقع</h6>
+            </div>
+            <form>
+              <div class="control-icon">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phone"
+                  placeholder="رقم الموبايل"
+                />
+                <i class="fa-solid fa-phone right"></i>
+              </div>
+              <div class="control-icon-pass">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password-now"
+                  placeholder="كلمة السر"
+                />
+                <i class="fa-solid fa-unlock lock"></i>
+                <span class="lock-icon" onclick="togglePasswordVisibilitynow()">
+                  <i id="lockIcon-now" class="fa-solid fa-eye"></i>
+                </span>
+              </div>
+              <div class="forget">
+                <a href="forget-pass.html">
+                  <h6>نسيت كلمة السر ؟</h6>
+                </a>
+              </div>
+
+              <a href="#">
+                <button type="submit" class="btn btn-primary">
+                  ابدأ الآن
+                </button></a
+              >
+              <div class="new">
+                <a href="new-account.html">
+                  <p>ليس لديك حساب ؟ <span>أنشئ حساب جديد</span></p>
+                </a>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="img-sign">
+              <img src="img/sign.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end sign-in -->
+
+    <!-- js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-demos.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- js -->
+
+    <!-- eye -->
+    <script>
+      function togglePasswordVisibilitynow() {
+        var passwordInput = document.getElementById("password-now");
+        var lockIcon = document.getElementById("lockIcon-now");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          lockIcon.classList.remove("fa-eye");
+          lockIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordInput.type = "password";
+          lockIcon.classList.remove("fa-eye-slash");
+          lockIcon.classList.add("fa-eye");
+        }
+      }
+    </script>
+    <!-- eye -->
+  </body>
+</html>
